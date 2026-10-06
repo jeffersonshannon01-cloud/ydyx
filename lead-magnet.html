@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>免费获取《5类企业债务重组常见误差及自查表》</title>
+  <meta name="description" content="一份帮你快速自查企业债务风险、避免重组走弯路的实操清单。填写信息即可免费领取。">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .lead-hero { padding: 3rem 1rem 2rem; text-align:center; background:linear-gradient(135deg,#004080,#0066cc); color:#fff; }
+    .lead-hero h1 { font-size:2rem; margin-bottom:0.5rem; }
+    .lead-hero p { opacity:0.9; max-width:600px; margin:0 auto; }
+    .lead-form-card { max-width:480px; margin:2rem auto; background:#fff; color:#333; padding:2rem; border-radius:8px; box-shadow:0 4px 16px rgba(0,0,0,0.08); }
+    .lead-form-card h2 { margin-top:0; color:#004080; }
+    .lead-form-card input { width:100%; padding:0.6rem; margin:0.5rem 0 1rem; border:1px solid #ccc; border-radius:4px; box-sizing:border-box; }
+    .lead-form-card .success-box { display:none; text-align:center; padding:1rem; }
+    .lead-form-card .success-box img { max-width:200px; margin-top:1rem; }
+    .wechat-tip { font-size:0.9rem; color:#666; }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo"><div class="logo-icon">救</div>困境企业救治</a>
+      <ul class="nav-links">
+        <li><a href="index.html">返回首页</a></li>
+        <li><a href="about.html">关于我们</a></li>
+        <li><a href="index.html#contact" class="nav-cta">预约咨询</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="lead-hero">
+    <h1>免费获取《5类企业债务重组常见误差及自查表》</h1>
+    <p>基于 69 亿元债权资产包处置经验提炼，帮你 15 分钟自查企业债务风险，避开重组路上最常见的 5 个坑。</p>
+  </section>
+
+  <div class="lead-form-card">
+    <h2>填写信息，免费领取</h2>
+    <form id="leadForm">
+      <input type="text" id="lname" name="name" placeholder="您的姓名" required>
+      <input type="tel" id="lphone" name="phone" placeholder="手机号码" required pattern="1[3-9]\d{9}">
+      <input type="text" id="lwechat" name="wechat" placeholder="微信号（选填）">
+      <button type="submit" class="btn-submit">免费获取自查表</button>
+    </form>
+    <div id="leadSuccess" class="success-box">
+      <h3>领取成功</h3>
+      <p class="wechat-tip">添加企业微信，发送关键词 <strong>「自查表」</strong>，即刻领取完整版。</p>
+      <img src="images/wechat-qr.png" alt="企业微信二维码" style="border-radius:8px;">
+      <p style="font-size:0.85rem;color:#999;margin-top:1rem;">或拨打 13908373468 领取</p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-bottom"><span>© 2026 困境企业救治 | 电话：13908373468</span></div>
+  </footer>
+
+  <script>
+    document.getElementById('leadForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      document.getElementById('leadSuccess').style.display = 'block';
+      document.getElementById('leadForm').style.display = 'none';
+      window.scrollTo({top: document.getElementById('leadSuccess').offsetTop - 80, behavior:'smooth'});
+    });
+  </script>
+</body>
+</html>
